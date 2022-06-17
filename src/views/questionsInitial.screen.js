@@ -1,5 +1,5 @@
-import { StyleSheet, Text, View, Button, TouchableHighlight } from 'react-native';
-import { AntDesign } from '@expo/vector-icons';
+import { StyleSheet, Text, View} from 'react-native';
+import { GreenButton } from '../components/buttons';
 
 export default function HomeScreen({navigation}) {
     return (
@@ -12,12 +12,11 @@ export default function HomeScreen({navigation}) {
             </Text>
 
             <Text style={styles.textWarning}>
-                É muito importante que você seja o mais sincero possível no preenchimento das perguntas!
-                
+                É muito importante que você seja o mais sincero possível no preenchimento das perguntas!                
             </Text>
 
 
-            <Button title='Próximo' color='#2EC2B3' />               
+            <GreenButton title='Próximo' onPress={()=>{navigation.push('Questions')}}/>               
         </View>
     );
 }
@@ -56,13 +55,6 @@ const styles = StyleSheet.create({
         fontSize: 23,
         borderBottomWidth: 3,
         borderBottomColor: '#2EC2B3',
-    },
-    button: {
-        margin: 20,
-    },
-    listTouch: {
-        flexDirection: 'row',
-        alignSelf: 'stretch'
     },
     listText: {
         fontSize: 20,

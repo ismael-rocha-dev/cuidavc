@@ -1,6 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import HomeScreen from '../views/home'
-import QuestionsScreen from '../views/questions';
+import HomeScreen from '../views/home.screen'
+import QuestionsInitialScreen from '../views/questionsInitial.screen';
+import QuestionsScreen from '../views/questions.screen'
 import { Logo } from '../components/header';
 import leftArrowImg from '../../assets/left-white-arrow.png'
 import {FontAwesome} from '@expo/vector-icons'
@@ -32,6 +33,11 @@ export default function (){
                   options={{
                     headerLeft: () => <FontAwesome name="bars" size={35} color="white"/>,
                   }}              
+                />
+                <HomeStack.Screen 
+                  name='QuestionsInitial' 
+                  component={QuestionsInitialScreen}    
+                                                 
                 />
                 <HomeStack.Screen 
                   name='Questions' 
