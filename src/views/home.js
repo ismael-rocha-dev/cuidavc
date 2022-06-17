@@ -57,7 +57,7 @@ text: {
     margin: 20,
     padding: 10,
     borderLeftColor: '#2EC2B3',
-    borderLeftWidth: 3
+    borderLeftWidth: 3,
 },
 title: {
     textAlign: 'center',

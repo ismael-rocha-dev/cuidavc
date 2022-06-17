@@ -23,7 +23,7 @@ export default function (){
                 headerTitleAlign:'center',
                 headerBackImageSource: leftArrowImg,     
        
-                headerTintColor: '#effffd'
+                headerTintColor: '#ffffff'
               }}
             >          
                 <HomeStack.Screen 

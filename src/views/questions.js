@@ -8,7 +8,12 @@ export default function HomeScreen({navigation}) {
         
             <Text style={styles.text}>
                 Responda a esse breve questionário. Nele saberemos os seus fatores de risco biológicos (relacionados ao 
-                funcionamento do seu corpo) e comportamentais (relacionados aos seus hábitos e estilo de vida.) 
+                funcionamento do seu corpo) e fatores comportamentais (relacionados aos seus hábitos e estilo de vida.) 
+            </Text>
+
+            <Text style={styles.textWarning}>
+                É muito importante que você seja o mais sincero possível no preenchimento das perguntas!
+                
             </Text>
 
 
@@ -27,15 +32,22 @@ const styles = StyleSheet.create({
         paddingVertical: 20
     },
     text: {
-
         fontSize: 20,
         textAlign: 'justify',
         textAlignVertical: 'center',
         color: '#196960',
-        marginVertical: 10,
-        margin: 20,
         padding: 10,
         
+    },
+    textWarning:{
+        fontSize: 18,
+        textAlign: 'justify',
+        textAlignVertical: 'center',
+        color: '#196960',
+        backgroundColor: '#72f2e5',
+        fontWeight: 'bold',
+        padding: 10,
+        borderRadius: 10,
     },
     title: {
         textAlign: 'center',
@@ -46,14 +58,7 @@ const styles = StyleSheet.create({
         borderBottomColor: '#2EC2B3',
     },
     button: {
-        flex:1,
-        flexDirection: 'row',
-        alignSelf: 'stretch',
-        justifyContent:'space-between',
         margin: 20,
-        padding: 10,
-        borderLeftColor: '#2EC2B3',
-        borderLeftWidth: 3
     },
     listTouch: {
         flexDirection: 'row',
